@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: wheat;
+    text-align: center;
+}
+
+h2{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+p{
+    font-size: 50px;
+    margin: 10px;
+    visibility: hidden;
+}
+
+.container{
+    width: 352px;
+    height: 355px;
+    padding: 5px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.block{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 16px;
+    margin-bottom: 5px;
+}
+
+img{
+    visibility: hidden;
+}
+
+#button{
+    background-color: rgb(153, 255, 0);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 1px 10px white inset, -1px -1px 10px white inset;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+}
+
+@keyframes flip {
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(180deg);}
+}
+
+@keyframes flipAgain {
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(180deg);}
+}
+
+@keyframes visibility {
+    0%{visibility: hidden;}
+    50%{visibility: hidden;}
+    100%{visibility: visible;}
+}
+
+@keyframes invisibility {
+    0%{visibility: visible;}
+    20%{visibility: hidden;}
+    100%{visibility: hidden;}
+}
